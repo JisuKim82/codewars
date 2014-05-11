@@ -5,5 +5,6 @@
 # domain_name("https://www.cnet.com") == "cnet"
 
 def domain_name(url)
-  url.gsub(/http:|https:|www.|\/\/|.com.*/,'')
+  #url.gsub(/http:|https:|www.|\/\/|.com.*/,'')
+  url.gsub(/http:|https:|www.|\/\//,'').split('.').first
 end
