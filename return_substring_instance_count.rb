@@ -5,3 +5,7 @@
 
 # solution('aa_bb_cc_dd_bb_e', 'bb') # should return 2 since bb shows up twice
 # solution('aaabbbcccc', 'bbb') # should return 1
+
+def solution(full_text,search_text)
+  full_text.scan(search_text).count
+end
