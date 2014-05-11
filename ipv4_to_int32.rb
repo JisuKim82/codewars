@@ -11,3 +11,14 @@
 # Write a function ip_to_int32(ip) that takes an IPv4 address and returns a 32 bit number.
 
 #   ip_to_int32("128.32.10.1") => 2149583361
+
+
+#split string on '.'
+#iterate through array and get the binary rep
+#join the array and calculate the 32 bit number
+
+
+
+def ip_to_int32(ip)
+  ip.split('.').map(&:to_i).map{|octet| octet.to_s(2).rjust(8,'0')}.join.to_i(2)
+end
