@@ -16,5 +16,9 @@ describe '#domain_name' do
     it 'should return cnet' do
       expect(domain_name('https://www.cnet.com')).to eq 'cnet'
     end
+
+    it 'should return monkey' do
+      expect(domain_name('www.monkey.net')).to eq 'monkey'
+    end
   end
 end
