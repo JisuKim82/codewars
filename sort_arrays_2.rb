@@ -6,3 +6,6 @@
 
 # ["fine", "Hello", "I'm", "there" ]
 
+def sort_array_2(arr)
+  arr.sort{|a,b| a.downcase <=> b.downcase}
+end
