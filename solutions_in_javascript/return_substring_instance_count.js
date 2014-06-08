@@ -7,6 +7,5 @@
 // solution('aaabbbcccc', 'bbb') # should return 1
 
 function solution(fullText, searchText) {
-  var count = fullText.split(searchText).length - 1;
-  return count;
+  return fullText.split(searchText).length - 1;
 }
