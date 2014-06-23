@@ -15,6 +15,10 @@ describe '#solution' do
     it "should return 'd' for solution(data,5,'d')" do
       expect(solution(@data,5,'d')).to eq 'd'
     end
+
+    it "should return 'd' for solution(data,3,'d')" do
+      expect(solution(@data,3,'d')).to eq 'd'
+    end
   end
 
   context 'It should also work for negative numbers as long as they aren\'t out of the bounds' do
@@ -24,6 +28,10 @@ describe '#solution' do
 
     it "should return 'd' for solution(data,-5,'d')" do
       expect(solution(@data,-5,'d')).to eq 'd'  
+    end
+
+    it "should return 'a' for solution(data,-3,'d')" do
+      expect(solution(@data,-3,'d')).to eq 'a'
     end
   end
 

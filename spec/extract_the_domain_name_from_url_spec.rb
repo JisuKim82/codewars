@@ -3,7 +3,7 @@ require_relative '../extract_the_domain_name_from_url'
 
 describe '#domain_name' do
   
-  context 'when given a URL as a string, parses out jus the domain name' do
+  context 'when given a URL as a string, parses out just the domain name' do
     
     it 'should return github' do
       expect(domain_name('http://github.com/carbonfive/raygun')).to eq 'github'

@@ -15,4 +15,3 @@ def solution(data, index, default)
   return data[index] if data.include?(data[index])
   default
 end
-
