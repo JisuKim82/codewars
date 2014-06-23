@@ -12,6 +12,7 @@
 # solution(data, -5, 'd') # should == 'd'
 
 def solution(data, index, default)
-  return data[index] if data[index] != nil
+  return data[index] if data.include?(data[index])
   default
 end
+
