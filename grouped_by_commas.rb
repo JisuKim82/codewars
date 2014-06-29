@@ -19,17 +19,21 @@
 # 35235235 -> "35,235,235"
 
 
+# def solution(n)
+#   result = ''
+#   numbers = n.to_s.split('')
+#   count = 0
+#   while numbers.length != 0
+#     if count % 3 != 0
+#       result = numbers.pop + result
+#     else
+#       result = numbers.pop + ',' + result
+#     end
+#     count += 1
+#   end
+#   result[0..-2]
+# end
+
 def solution(n)
-  result = ''
-  numbers = n.to_s.split('')
-  count = 0
-  while numbers.length != 0
-    if count % 3 != 0
-      result = numbers.pop + result
-    else
-      result = numbers.pop + ',' + result
-    end
-    count += 1
-  end
-  result[0..-2]
+  n.to_s.reverse.scan(/\d{1,3}/).join(',').reverse
 end
